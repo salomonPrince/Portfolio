@@ -1,0 +1,254 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; 
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('header.jpg') no-repeat center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    align-content: space-between;
+    position:absolute;
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+}
+
+.detel p{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 22px;
+}
+
+.detel a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: orange;
+    color: #fff;
+    transition: .5s;
+    background: #212121;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .boy{
+    left: 45%;
+}
+
+#contact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contact ul li {
+    color: #444;
+    margin-bottom: 5px;
+}
+
+#contact form {
+    margin-top: 20px;
+}
+
+#contact label {
+    color: #333;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+    background-color: #2a4c70;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Added styles for the skill section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-item {
+    background-color: #2a4c70;
+    color: #fff;
+    border: 2px solid #24486e;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(33.33% - 10px); /* Adjust according to your layout */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.skill-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.skill-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/* Nexity */
+
+.skills {
+    border: 2px solid #24486e; /* Blue border */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.skill-item {
+    margin-bottom: 5px; /* Add some space between each skill item */
+    padding: 5px 10px; /* Add padding inside each skill item */
+    background-color: #24486e; /* Light gray background */
+    border: 1px solid #f2f2f2; /* Blue border */
+    border-radius: 3px; /* Add border radius for rounded corners */
+}
+
+/* Added styles for the projects section */
+#projects {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: calc(25% - 10px); /* Two columns with a little space between them */
+    margin-bottom: 20px;
+    background-color: hwb(252 37% 35%);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-item h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    margin: 0;
+}
+
+/* Added border for the projects section */
+#projects {
+    border: 2px solid #0c0b0b;
+    border-radius: 10px;
+}
+
