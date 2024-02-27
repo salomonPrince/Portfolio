@@ -144,6 +144,56 @@
     display: block;
 }
 
+/* Make Projects responsive */
+
+.project-item {
+    transition: transform 0.3s ease;
+}
+
+/* Added styles for the projects section */
+#projects {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: calc(25% - 10px); /* Two columns with a little space between them */
+    margin-bottom: 20px;
+    background-color: hwb(252 37% 35%);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.project-item:hover {
+    background-color: #cca934; /* Change background color on hover */
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-item h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    margin: 0;
+}
+
+
 
     </style>
 </head>
