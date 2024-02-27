@@ -120,6 +120,10 @@
     box-sizing: border-box;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
+     display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+    position: relative; /* Required for absolute positioning */
 }
 
 .skill-item:hover {
@@ -129,8 +133,11 @@
 
 /*styles the skills cource images  */
 .skill-item img {
-    display: none;
-    max-width: 100px; /* Adjust image size as needed */
+    display: none; /* Hide the image by default */
+    
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    max-width: 50px; /* Adjust image size as needed */
 }
 
 .skill-item.active img {
