@@ -6,6 +6,10 @@
     <title> Personal Portfolio </title>
     <!-- font icons -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Add javascript: script.js link here -->
+    <script src="script.js"></script>
     <style>
         nav {
             position: absolute;
@@ -59,7 +63,7 @@
         }
 
         footer button {
-            background-color: #007bff;
+            background-color: #3370b1;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -79,6 +83,61 @@
         #contact form {
             margin-bottom: 20px; /* Increased margin */
         }
+
+        /* Add the new CSS styles here */
+        .hire-me,
+        .download-cv {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #007bff; /* Button color */
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+            margin: 10px; /* Add some margin for spacing */
+        }
+
+        .hire-me:hover,
+        .download-cv:hover {
+            background-color: #416aa0; /* Darker color on hover */
+        }
+
+        /* Add styles for the skills section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-item {
+    background-color: #2a4c70;
+    color: #fff;
+    border: 2px solid #24486e;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(33.33% - 10px); /* Adjust according to your layout */
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-item:hover {
+    background-color: #cca934;
+    color: #fff;
+}
+
+/*styles the skills cource images  */
+.skill-item img {
+    display: none;
+    max-width: 100px; /* Adjust image size as needed */
+}
+
+.skill-item.active img {
+    display: block;
+}
+
+
     </style>
 </head>
 <body>
@@ -106,8 +165,8 @@
                I am a creative thinker with a passion <br>
                 for creating innovative and user-friendly software.</b><br>
                 <!-- Add a Hire Me button -->        
-                <a href="#contact">HIRE ME</a>    
-                <a href="Salomon_Baraka_CV.pdf" download><span>DOWNLOAD CV</span></a>
+                <a href="#contact" class="hire-me">HIRE ME</a>
+                <a href="Salomon_Baraka_CV.pdf" download class="download-cv"><span>DOWNLOAD CV</span></a>
             </p>
         </div>
         <div class="images">
@@ -124,33 +183,31 @@
         <br>
         <div class="skills">
             <h3>Skills & Technologies</h3>
-            <br> <!-- Added break line -->
-            <p>
-            <div class="skill-item">HTML</div>
-            <div class="skill-item">CSS</div>
-            <div class="skill-item">JavaScript</div>
-            <div class="skill-item">Swift</div>
-            <div class="skill-item">Python</div>
-            <div class="skill-item">Java</div>
-            <div class="skill-item">SQL</div>
-            <div class="skill-item">C#</div>
-            <div class="skill-item">GitHub</div>
-            <div class="skill-item">MySQL</div>
-            <div class="skill-item">VS Code</div>
-            <div class="skill-item">Postman</div>
-            <div class="skill-item">Adobe XD</div>
-            <div class="skill-item">Oracle Database</div>
-            <div class="skill-item">Wordpress</div>
-            <div class="skill-item">Android Studio</div>
-            <div class="skill-item">Visual Studio</div>
-            <div class="skill-item">Trello</div>
-            <div class="skill-item">Xcode</div>
-            <div class="skill-item">Moqups</div>
-            <div class="skill-item">CapCut</div>
-        </div> </p>
-        <br> 
+            <br>
+            <div class="skill-item" id="html">HTML <img src="html.png" alt="HTML Image"></div>
+            <div class="skill-item" id="css">CSS <img src="css.png" alt="CSS Image"></div>
+            <div class="skill-item" id="js">JavaScript <img src="js.png" alt="JavaScript Image"></div>
+            <div class="skill-item" id="swift">Swift <img src="swift.png" alt="Swift Image"></div>
+            <div class="skill-item" id="py">Python <img src="python.png" alt="Python Image"></div>
+            <div class="skill-item" id="java">Java <img src="java.png" alt="Java Image"></div>
+            <div class="skill-item" id="sql">SQL <img src="sql.png" alt="SQL Image"></div>
+            <div class="skill-item" id="c#">C++ <img src="cplus.png" alt="C# Image"></div>
+            <div class="skill-item" id="gt">GitHub <img src="github.png" alt="GitHub Image"></div>
+            <div class="skill-item" id="mysql">MySQL <img src="mysql.png" alt="MySQL Image"></div>
+            <div class="skill-item" id="vscode">VS Code <img src="vscode.png" alt="VS Code Image"></div>
+            <div class="skill-item" id="postman">Postman <img src="postman.png" alt="Postman Image"></div>
+            <div class="skill-item" id="Adobe">Adobe XD <img src="adobe.png" alt="Adobe XD Image"></div>
+            <div class="skill-item" id="odb">Oracle Database <img src="oracle.png" alt="Oracle Database Image"></div>
+            <div class="skill-item" id="wp">Wordpress <img src="wordpress.png" alt="Wordpress Image"></div>
+            <div class="skill-item" id="as">Android Studio <img src="android.png" alt="Android Studio Image"></div>
+            <div class="skill-item" id="vs">Visual Studio <img src="visual.png" alt="Visual Studio Image"></div>
+            <div class="skill-item" id="trello">Trello <img src="trello.png" alt="Trello Image"></div>
+            <div class="skill-item" id="xcode">Xcode <img src="xcode.png" alt="Xcode Image"></div>
+            <div class="skill-item" id="moqups">Moqups <img src="moqups.png" alt="Moqups Image"></div>
+            <div class="skill-item" id="capcut">CapCut <img src="capcut.png" alt="CapCut Image"></div>
+        </div>
     </section>
-
+    
         <!-- Projects title -->
         <h2  style="color: rgb(18, 33, 121);"> Projects </h2> <br>
         
