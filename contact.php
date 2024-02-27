@@ -1,10 +1,29 @@
-
 <?php
+// Function to sanitize input data
+function sanitize_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+// Function to validate email address
+function is_valid_email($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+
+// Check if form is submitted using POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    // Validate and sanitize form data
+    $name = sanitize_input($_POST['name']);
+    $email = sanitize_input($_POST['email']);
+    $message = sanitize_input($_POST['message']);
+
+    // Validate email address
+    if (!is_valid_email($email)) {
+        echo "Invalid email address.";
+        exit;
+    }
 
     // Set recipient email address
     $to = "salomonbaraka@gmail.com";
@@ -32,4 +51,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
 }
 ?>
-
