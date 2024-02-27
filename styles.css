@@ -252,3 +252,12 @@ span{
     border-radius: 10px;
 }
 
+/* Added styles for the footer section */
+footer button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
