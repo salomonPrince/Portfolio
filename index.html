@@ -211,8 +211,8 @@
         
         <div class="detel">
             <h2><font color="black"> Hello! </font></h2>
-            <h1> I'm Salomon <span>Baraka</span></h1>
-            <h2><b>Software Developer</b></h2> 
+            <h1> It's Salomon <span>Baraka</span></h1>
+            <h2><b> I'm a <span></span> Software Developer</span> </b></h2> 
             <p><b>I am a Programmer and software developer <br>
                 with a passion for web development and programming<br>
                 I am a full stack developer with a focus on front-end<br>
@@ -532,14 +532,15 @@
             <li>Message: Hell Salomon, I would like to reach you very soon..</li>
         </ul>
         <p><br><font color="24486e"><b> Feel free to drop me a message using the form below: </b></font></p>
-        <form action="contact.php" method="post">
+        <form action="https://api.web3forms.com/submit" method="POST">
             <label for="name">Name:</label><br>
+            <input type="hidden" name="access_key" value="44f59444-3c2c-4cb9-8aae-931813dbdb50">
             <input type="text" id="name" name="name" required><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" required></textarea><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Send Message">
         </form>
     </section>
 
